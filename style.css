@@ -1,0 +1,58 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-left: 1.2em;
+  padding: 1.2em;
+  width: 100%;
+  box-shadow: 1px 1px 3px 2px #ddd;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 8px;
+}
+
+.draggable .active {
+  transition: all 0.4s ease-in-out;
+  background-color: lightskyblue;
+  color: white;
+  cursor: grabbing;
+}
+
+.draggable:hover {
+  transition: all 0.4s ease-in-out;
+  background-color: lightskyblue;
+  color: white;
+  cursor: grab;
+}
+
+.drop-target:hover {
+  background-color: lightskyblue;
+  color: white;
+  transition: all 0.4s ease-in-out;
+  cursor: auto;
+}
+
+th {
+  background-color: lightskyblue;
+  color: white;
+}
