@@ -40,7 +40,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   let logisticsTable = document.createElement("table");
   let logisticsTableCaption = document.createElement("caption");
-  logisticsTableCaption.innerHTML = "Logistics Table";
+  logisticsTableCaption.innerHTML = "Delivery";
   logisticsTableCaption.style.fontWeight = "bold";
   logisticsTable.appendChild(logisticsTableCaption);
   logisticsTable.innerHTML += `
@@ -53,7 +53,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // planner table
   let plannerTable = document.createElement("table");
   let plannerTableCaption = document.createElement("caption");
-  plannerTableCaption.innerHTML = "Planner Table";
+  plannerTableCaption.innerHTML = "Planner";
   plannerTableCaption.style.fontWeight = "bold";
   plannerTable.appendChild(plannerTableCaption);
   plannerTable.innerHTML += `
