@@ -2,7 +2,7 @@ import { Customer, Planner } from "./models";
 import "./style.css";
 import { filterCustomerList } from "./utils";
 
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
   // customer list
   let customers = [];
 
@@ -36,7 +36,7 @@ window.addEventListener("load", () => {
     );
   }
 
-  // customer table
+  // logistics table
 
   let logisticsTable = document.createElement("table");
   let logisticsTableCaption = document.createElement("caption");
@@ -49,8 +49,8 @@ window.addEventListener("load", () => {
   <th>Pickup Location</th>
   <th>Dropoff Location</th>
   `;
-  // append the header to the logistics table
-  // logisticsTable.appendChild(logisticsTableHeader);
+
+  // planner table
   let plannerTable = document.createElement("table");
   let plannerTableCaption = document.createElement("caption");
   plannerTableCaption.innerHTML = "Planner Table";
@@ -107,15 +107,18 @@ window.addEventListener("load", () => {
       // remove the customer from the table
       document.getElementById(`${id}`).parentElement.remove();
 
+      // write the id of the customer to the table data
       e.target.innerHTML = ` 
-      ${customer.id}
+      ${customer.id} 
       `;
 
       // disable the drop target from accepting any more drops
       e.target.classList.remove("drop-target");
 
+      // grey backround color to indicate the slot has been disabled
+      e.target.style.backgroundColor = "#cecece";
+
       // we can send the planner item to the server here
     });
   });
-  import("./style.css");
 });

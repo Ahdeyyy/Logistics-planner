@@ -7,10 +7,12 @@
 /* body */
 body {
   font-family: "Roboto", sans-serif;
-  background-image: linear-gradient(
-    to right,
-    hsla(157, 96%, 78%, 0.8),
-    rgba(141, 255, 227, 0.8)
+  background: radial-gradient(
+    ellipse at center,
+    rgba(28, 255, 206, 0.6) 0,
+    rgba(145, 253, 211, 0.8),
+    lightgreen 75%,
+    greenyellow 100%
   );
 }
 
@@ -37,15 +39,18 @@ caption {
   background-color: greenyellow;
   box-shadow: 1px 0 2px 2px rgba(0, 0, 0, 0.2);
   border-radius: 0.5em 0.5em 0 0;
+  border: 1px solid black;
 }
 
 .draggable:hover {
   background-color: greenyellow;
   cursor: grab;
 }
+
 .drop-target:hover {
   background-color: greenyellow;
 }
+
 table {
   background-color: #f2f2f2;
   box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.2);
@@ -54,10 +59,12 @@ table {
 td {
   border: 1px solid black;
   padding: 0.5em;
+  text-align: center;
+  font-weight: 600;
 }
 
 th {
   border: 1px solid black;
   padding: 0.5em;
-  background-color: hsla(96, 100%, 70%, 0.8);
+  background-color: rgba(163, 255, 102, 0.8);
 }
